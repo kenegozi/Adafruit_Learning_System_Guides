@@ -124,9 +124,8 @@ void loop()
   // io.adafruit.com, and processes any incoming data.
   io.run();
 
-  // Read and print out the temperature, then convert to *F
+  // Read and print out the temperature.
   float c = tempsensor.readTempC();
-
   Serial.print("Temp: ");
   Serial.print(c);
   Serial.println("C");
